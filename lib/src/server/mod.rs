@@ -110,7 +110,7 @@ pub mod constants {
     /// Minimum sampling interval on monitored items
     pub const MIN_SAMPLING_INTERVAL: f64 = (SUBSCRIPTION_TIMER_RATE_MS as f64) / 1000.0;
     /// Maximum data change queue allowed by clients on monitored items
-    pub const MAX_DATA_CHANGE_QUEUE_SIZE: usize = 10;
+    pub const MAX_DATA_CHANGE_QUEUE_SIZE: usize = 40;
     /// The default size of preallocated vecs of monitored items per subscription
     pub const DEFAULT_MONITORED_ITEM_CAPACITY: usize = 100;
     /// Interval to check for HELLO timeout in millis. This can be fairly coarse because it's not
@@ -127,24 +127,24 @@ pub mod constants {
     /// Maximum browse continuation points
     pub const MAX_BROWSE_CONTINUATION_POINTS: usize = 20;
     /// Maximum history continuation points
-    pub const MAX_HISTORY_CONTINUATION_POINTS: usize = 10;
+    pub const MAX_HISTORY_CONTINUATION_POINTS: usize = 40;
     /// Maximum query continuation points
-    pub const MAX_QUERY_CONTINUATION_POINTS: usize = 10;
+    pub const MAX_QUERY_CONTINUATION_POINTS: usize = 40;
 
     /// Maximum number of nodes in a TranslateBrowsePathsToNodeIdsRequest
     pub const MAX_NODES_PER_TRANSLATE_BROWSE_PATHS_TO_NODE_IDS: usize = 10;
     pub const MAX_NODES_PER_READ: usize = 50;
-    pub const MAX_NODES_PER_WRITE: usize = 10;
-    pub const MAX_NODES_PER_METHOD_CALL: usize = 10;
+    pub const MAX_NODES_PER_WRITE: usize = 40;
+    pub const MAX_NODES_PER_METHOD_CALL: usize = 40;
     pub const MAX_NODES_PER_BROWSE: usize = 50;
-    pub const MAX_NODES_PER_REGISTER_NODES: usize = 10;
+    pub const MAX_NODES_PER_REGISTER_NODES: usize = 40;
     /// Maximum number of nodes / references per node manaument operation
     pub const MAX_NODES_PER_NODE_MANAGEMENT: usize = 100;
-    pub const MAX_MONITORED_ITEMS_PER_CALL: usize = 10;
-    pub const MAX_NODES_PER_HISTORY_READ_DATA: usize = 10;
-    pub const MAX_NODES_PER_HISTORY_READ_EVENTS: usize = 10;
-    pub const MAX_NODES_PER_HISTORY_UPDATE_DATA: usize = 10;
-    pub const MAX_NODES_PER_HISTORY_UPDATE_EVENTS: usize = 10;
+    pub const MAX_MONITORED_ITEMS_PER_CALL: usize = 40;
+    pub const MAX_NODES_PER_HISTORY_READ_DATA: usize = 40;
+    pub const MAX_NODES_PER_HISTORY_READ_EVENTS: usize = 40;
+    pub const MAX_NODES_PER_HISTORY_UPDATE_DATA: usize = 40;
+    pub const MAX_NODES_PER_HISTORY_UPDATE_EVENTS: usize = 40;
 }
 
 #[cfg(test)]
